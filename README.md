@@ -1,1 +1,1 @@
-https://Nazarenko-wq.github.io/cssBayan/ "cssBayan/index.html
+https://Nazarenko-wq.github.io/cssBayan/index.html
