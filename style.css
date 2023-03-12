@@ -57,9 +57,6 @@ main:hover .parent .first_child .text{
 } 
 
 .first_child_def {
-    font-family:'Times New Roman', Times, sans-serif;
-    font-size: 26px;
-    letter-spacing: 1px;
     border-top: 1px solid rgb(196, 192, 192);
     padding: 15px;
     display: flex;
@@ -67,9 +64,6 @@ main:hover .parent .first_child .text{
 }
 
 .first_child {
-    font-family:'Times New Roman', Times, sans-serif;
-    font-size: 26px;
-    letter-spacing: 1px;
     border-top: 1px solid rgb(196, 192, 192);
     padding: 15px;
     display: flex;
@@ -77,11 +71,17 @@ main:hover .parent .first_child .text{
 }
 
 .text {
+    font-family:'Times New Roman', Times, sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
     color: blue;
     font-weight: 700;
 }
 
 .text_def {
+    font-family:'Times New Roman', Times, sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
     font-weight: 700;
 }
 
