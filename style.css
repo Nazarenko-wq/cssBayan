@@ -30,31 +30,34 @@ main {
     cursor: pointer;
 }
 
-main:hover .parent .first_child .open_icon {
-    display: block;
-}
+@media(hover: hover) {
+    main:hover .parent .first_child .open_icon {
+        display: block;
+    }
+    
+    main:hover .parent_def .first_child_def .open_icon_def {
+        display: block;
+    }
+    
+    main:hover .parent .first_child .text{
+        color: black;
+    }
 
-main:hover .parent_def .first_child_def .open_icon_def {
-    display: block;
-}
-
-main:hover .parent .first_child .text{
-    color: black;
+    .parent:hover .last_child {
+        height: 450px;
+        /* height: auto; */
+        padding: 20px;
+        transition: all 1s;
+    }
+    
+    .parent:hover .first_child .open_icon {
+        transform: rotateZ(45deg);
+    } 
 }
 
 .parent {
     transition: all 1s;
 }
-
-.parent:hover .last_child {
-    height: 300px;
-    padding: 20px;
-    transition: all 0.5s;
-}
-
-.parent:hover .first_child .open_icon {
-    transform: rotateZ(45deg);
-} 
 
 .first_child_def {
     border-top: 1px solid rgb(196, 192, 192);
@@ -89,7 +92,6 @@ main:hover .parent .first_child .text{
     display: flex;
     justify-content: center;
     transition: all 1s;
-    height: 300px;
     padding: 20px;
 }
 
@@ -102,6 +104,8 @@ main:hover .parent .first_child .text{
 
 .picture, .picture_def {
     max-width: 600px;
+    width: 100%;
+    height: auto;
     left: 40%;
 }
 
