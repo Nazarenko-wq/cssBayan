@@ -10,7 +10,6 @@ body {
 
 
 header {
-    /* outline: 1px solid green; */
     max-width: 1920px;
     width: 100%;
     margin: 0px auto;
@@ -22,7 +21,6 @@ h1 {
 }
 
 main {
-    /* outline: 1px solid red; */
     max-width: 1920px;
     width: 100%;
     margin: 0px auto;
@@ -43,11 +41,39 @@ main {
         color: black;
     }
 
-    .parent:hover .last_child {
+    .parent1:hover ~ .child1 {
         height: 450px;
-        /* height: auto; */
         padding: 20px;
         transition: all 1s;
+    }
+    
+    .parent2:hover ~ .child2 {
+        height: 450px;
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    .parent3:hover ~ .child3 {
+        height: 450px;
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    .parent4:hover ~ .child4 {
+        height: 450px;
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    .parent5:hover ~ .child5 {
+        height: 450px;
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    .child1:hover, .child2:hover, .child3:hover, .child4:hover, .child5:hover {
+        height: auto;
+        padding: 20px;
     }
     
     .parent:hover .first_child .open_icon {
@@ -55,15 +81,33 @@ main {
     } 
 }
 
-.parent {
-    transition: all 1s;
+#img1:checked ~ .child1 {
+    height: auto;
+        padding: 20px;
 }
 
-.first_child_def {
-    border-top: 1px solid rgb(196, 192, 192);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
+#img2:checked ~ .child2 {
+    height: auto;
+    padding: 20px;
+}
+
+#img3:checked ~ .child3 {
+    height: auto;
+    padding: 20px;
+}
+
+#img4:checked ~ .child4 {
+    height: auto;
+    padding: 20px;
+}
+
+#img5:checked ~ .child5 {
+    height: auto;
+    padding: 20px;
+}
+
+.parent {
+    transition: all 1s;
 }
 
 .first_child {
@@ -81,20 +125,6 @@ main {
     font-weight: 700;
 }
 
-.text_def {
-    font-family:'Times New Roman', Times, sans-serif;
-    font-size: 32px;
-    letter-spacing: 1px;
-    font-weight: 700;
-}
-
-.last_child_def {
-    display: flex;
-    justify-content: center;
-    transition: all 1s;
-    padding: 20px;
-}
-
 .last_child {
     display: flex;
     justify-content: center;
@@ -102,7 +132,7 @@ main {
     height: 0;
 }
 
-.picture, .picture_def {
+.picture {
     max-width: 600px;
     width: 100%;
     height: auto;
@@ -121,5 +151,11 @@ main {
     height: 20px;
     transform: rotateZ(45deg);
     cursor: pointer;
+    display: none;
+}
+
+/* -------------------------------------------------------------------- */
+
+#img1,#img2,#img3, #img4, #img5 {
     display: none;
 }
