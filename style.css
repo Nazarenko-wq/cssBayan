@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(254, 245, 234);
+}
+
+
+header {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+main {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media(hover: hover) {
+    main:hover .parent .first_child .open_icon {
+        display: block;
+    }
+    
+    main:hover .parent_def .first_child_def .open_icon_def {
+        display: block;
+    }
+    
+    main:hover .parent .first_child .text{
+        color: black;
+    }
+
+    .parent1:hover ~ .child1 {
+        height: 450px;
+        padding: 20px;
+        transition: all 1s;
+    }
+    
+    .parent2:hover ~ .child2 {
+        height: 450px;
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    .parent3:hover ~ .child3 {
+        height: 450px;
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    .parent4:hover ~ .child4 {
+        height: 450px;
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    .parent5:hover ~ .child5 {
+        height: 450px;
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    .child1:hover, .child2:hover, .child3:hover, .child4:hover, .child5:hover {
+        height: 450px;
+        padding: 20px;
+    }
+    
+    .parent:hover .first_child .open_icon {
+        transform: rotateZ(45deg);
+    } 
+}
+
+#img1:checked ~ .child1 {
+    height: auto;
+        padding: 20px;
+}
+
+#img2:checked ~ .child2 {
+    height: auto;
+    padding: 20px;
+}
+
+#img3:checked ~ .child3 {
+    height: auto;
+    padding: 20px;
+}
+
+#img4:checked ~ .child4 {
+    height: auto;
+    padding: 20px;
+}
+
+#img5:checked ~ .child5 {
+    height: auto;
+    padding: 20px;
+}
+
+.parent {
+    transition: all 1s;
+}
+
+.first_child {
+    border-top: 1px solid rgb(196, 192, 192);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    font-family:'Times New Roman', Times, sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: blue;
+    font-weight: 700;
+}
+
+.last_child {
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+    height: 0;
+}
+
+.picture {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    left: 40%;
+}
+
+.open_icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.open_icon_def {
+    width: 20px;
+    height: 20px;
+    transform: rotateZ(45deg);
+    cursor: pointer;
+    display: none;
+}
+
+/* -------------------------------------------------------------------- */
+
+#img1,#img2,#img3, #img4, #img5 {
+    display: none;
+}
