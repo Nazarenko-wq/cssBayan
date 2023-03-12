@@ -72,7 +72,7 @@ main {
     }
 
     .child1:hover, .child2:hover, .child3:hover, .child4:hover, .child5:hover {
-        height: auto;
+        height: 450px;
         padding: 20px;
     }
     
