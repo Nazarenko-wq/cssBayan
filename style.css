@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(254, 245, 234);
+}
+
+
+header {
+    /* outline: 1px solid green; */
+    max-width: 1920px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+main {
+    /* outline: 1px solid red; */
+    max-width: 1920px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    cursor: pointer;
+}
+
+main:hover .parent .first_child .open_icon {
+    display: block;
+}
+
+main:hover .parent_def .first_child_def .open_icon_def {
+    display: block;
+}
+
+main:hover .parent .first_child .text{
+    color: black;
+}
+
+.parent {
+    transition: all 1s;
+}
+
+.parent:hover .last_child {
+    height: 300px;
+    padding: 20px;
+    transition: all 0.5s;
+}
+
+.parent:hover .first_child .open_icon {
+    transform: rotateZ(45deg);
+} 
+
+.first_child_def {
+    font-family:'Times New Roman', Times, sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    border-top: 1px solid rgb(196, 192, 192);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_child {
+    font-family:'Times New Roman', Times, sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    border-top: 1px solid rgb(196, 192, 192);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    color: blue;
+    font-weight: 700;
+}
+
+.text_def {
+    font-weight: 700;
+}
+
+.last_child_def {
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+    height: 300px;
+    padding: 20px;
+}
+
+.last_child {
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+    height: 0;
+}
+
+.picture, .picture_def {
+    max-width: 600px;
+    left: 40%;
+}
+
+.open_icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.open_icon_def {
+    width: 20px;
+    height: 20px;
+    transform: rotateZ(45deg);
+    cursor: pointer;
+    display: none;
+}
